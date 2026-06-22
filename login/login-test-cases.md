@@ -1,122 +1,154 @@
-Login Feature - Test Cases
-TC001 - Valid login
-Precondition: User is on the saucedemo.com login page
+# Login Feature - Test Cases
+**Test site**: https://www.saucedemo.com
 
-Steps:
+---
 
-Enter valid username: standard_user
-Enter valid password: secret_sauce
-Click the Login button
-Expected result: User is redirected to the products page
+### TC001 - Valid login
 
-Status: Pass
+**Precondition:** User is on the saucedemo.com login page
 
-TC002 - Invalid password
-Precondition: User is on the login page
+**Steps:**
+1. Enter valid username: standard_user
+2. Enter valid password: secret_sauce
+3. Click the Login button
 
-Steps:
+**Expected result:** User is redirected to the products page
 
-Enter valid username: standard_user
-Enter incorrect password: wrongpassword
-Click the Login button
-Expected result: Error message displayed - "Username and password do not match any user in this service"
+**Status:** Pass
 
-Status: Pass
+---
 
-TC003 - Invalid username
-Precondition: User is on the login page
+### TC002 - Invalid password
 
-Steps:
+**Precondition:** User is on the login page
 
-Enter invalid username: wrongusername
-Enter valid password: secret_sauce
-Click the Login button
-Expected result: Error message displayed - "Username and password do not match any user in this service"
+**Steps:**
+1. Enter valid username: standard_user
+2. Enter incorrect password: wrongpassword
+3. Click the Login button
 
-Status: Pass
+**Expected result:** Error message displayed - "Username and password do not match any user in this service"
 
-TC004 - Both fields empty
-Precondition: User is on the login page
+**Status:** Pass
 
-Steps:
+---
 
-Leave username field empty
-Leave password field empty
-Click the Login button
-Expected result: Error message displayed - "Username is required"
+### TC003 - Invalid username
 
-Status: Pass
+**Precondition:** User is on the login page
 
-TC005 - Username empty, password filled
-Precondition: User is on the login page
+**Steps:**
+1. Enter invalid username: wrongusername
+2. Enter valid password: secret_sauce
+3. Click the Login button
 
-Steps:
+**Expected result:** Error message displayed - "Username and password do not match any user in this service"
 
-Leave username field empty
-Enter valid password: secret_sauce
-Click the Login button
-Expected result: Error message displayed - "Username is required"
+**Status:** Pass
 
-Status: Pass
+---
 
-TC006 - Username filled, password empty
-Precondition: User is on the login page
+### TC004 - Both fields empty
 
-Steps:
+**Precondition:** User is on the login page
 
-Enter valid username: standard_user
-Leave password field empty
-Click the Login button
-Expected result: Error message displayed - "Password is required"
+**Steps:**
+1. Leave username field empty
+2. Leave password field empty
+3. Click the Login button
 
-Status: Pass
+**Expected result:** Error message displayed - "Username is required"
 
-TC007 - Locked out user
-Precondition: User is on the login page
+**Status:** Pass
 
-Steps:
+---
 
-Enter locked out username: locked_out_user
-Enter valid password: secret_sauce
-Click the Login button
-Expected result: Error message displayed - "Sorry, this user has been locked out"
+### TC005 - Username empty, password filled
 
-Status: Pass
+**Precondition:** User is on the login page
 
-TC008 - Login with extra spaces in username
-Precondition: User is on the login page
+**Steps:**
+1. Leave username field empty
+2. Enter valid password: secret_sauce
+3. Click the Login button
 
-Steps:
+**Expected result:** Error message displayed - "Username is required"
 
-Enter username with spaces at the end: standard_user
-Enter valid password: secret_sauce
-Click the Login button
-Expected result: Error message displayed - "Username and password do not match any user in this service"
+**Status:** Pass
 
-Status: Pass
+---
 
-TC009 - Password field masking
-Precondition: User is on the login page
+### TC006 - Username filled, password empty
 
-Steps:
+**Precondition:** User is on the login page
 
-Click on the password field
-Type any password: secret_sauce
-Observe the characters as they are entered
-Expected result: Password characters are masked and displayed as dots - plain text is not visible
+**Steps:**
+1. Enter valid username: standard_user
+2. Leave password field empty
+3. Click the Login button
 
-Status: Pass
+**Expected result:** Error message displayed - "Password is required"
 
-TC010 - Successful logout after login
-Precondition: User is on the login page
+**Status:** Pass
 
-Steps:
+---
 
-Enter valid username: standard_user
-Enter valid password: secret_sauce
-Click the Login button
-Click the menu icon (three horizontal lines) in the top left corner
-Click the Logout button
-Expected result: User is logged out and redirected back to the login page
+### TC007 - Locked out user
 
-Status: Pass
+**Precondition:** User is on the login page
+
+**Steps:**
+1. Enter locked out username: locked_out_user
+2. Enter valid password: secret_sauce
+3. Click the Login button
+
+**Expected result:** Error message displayed - "Sorry, this user has been locked out"
+
+**Status:** Pass
+
+---
+
+### TC008 - Login with extra spaces in username
+
+**Precondition:** User is on the login page
+
+**Steps:**
+1. Enter username with spaces at the end: standard_user
+2. Enter valid password: secret_sauce
+3. Click the Login button
+
+**Expected result:** Error message displayed - "Username and password do not match any user in this service"
+
+**Status:** Pass
+
+---
+
+### TC009 - Password field masking
+
+**Precondition:** User is on the login page
+
+**Steps:**
+1. Click on the password field
+2. Type any password: secret_sauce
+3. Observe the characters as they are entered
+
+**Expected result:** Password characters are masked and displayed as dots - plain text is not visible
+
+**Status:** Pass
+
+---
+
+### TC010 - Successful logout after login
+
+**Precondition:** User is on the login page
+
+**Steps:**
+1. Enter valid username: standard_user
+2. Enter valid password: secret_sauce
+3. Click the Login button
+4. Click the menu icon (three horizontal lines) in the top left corner
+5. Click the Logout button
+
+**Expected result:** User is logged out and redirected back to the login page
+
+**Status:** Pass
