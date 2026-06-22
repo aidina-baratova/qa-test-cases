@@ -121,7 +121,7 @@
 6. Enter zip code: 90001
 7. Click Continue
 
-**Expected result:** Error message displayed — [go to saucedemo and check exact message]
+**Expected result:** Error message displayed - "First Name is required"
 
 **Status:** Pass
 
@@ -138,6 +138,6 @@
 6. Leave zip code empty
 7. Click Continue
 
-**Expected result:** Error message displayed — [go to saucedemo and check exact message]
+**Expected result:** Error message displayed - "Postal Code is required"
 
 **Status:** Pass
